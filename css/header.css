@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+
+#wrap{
+}
+
+
+/* header */
+
+
+header{
+    padding: 70px 0 20px;
+    position: relative;
+    background-color: #e8e8e8;
+}
+
+/* header bottom */
+
+header>.bottom{}
+
+
+header>.bottom>h1{
+    margin-bottom: 47px;
+    text-align: center;
+}
+
+header>.bottom>nav{}
+
+header>.bottom>nav>ul{
+    display: flex;
+    justify-content: center;
+}
+
+header>.bottom>nav>ul>li{
+    padding-bottom: 6px;
+    margin: 27px;
+    position: relative;
+}
+
+/* header>.bottom>nav>ul>li:hover>a{
+    border-bottom: 1px solid #25292c;
+} */
+
+header>.bottom>nav>ul>li>a{
+    /* display : block */
+    /* display: inline-block;
+    margin-bottom: 10px; */
+    font-size: 12px;
+    color: #25292c;
+}
+
+header>.bottom>nav>ul>li>span{
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 100%; height: 1px;
+    background-color: transparent;
+}
+
+header>.bottom>nav>ul>li:hover>span{
+    background-color: #25292c;
+}
+
+/* header top */
+
+header>div.top{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    padding: 16px 0 10px;
+    background-color: #fff;
+}
+
+header>div.top>p{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+header>div.top>p>a{
+    font-size: 12px;
+    color: #888;
+}
+
+/* btn */
+
+article{}
+
+article>div{
+    padding: 95px 0;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+article>div>h3{
+    letter-spacing: 10px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #25292c;
+    margin-bottom: 80px;
+}
+
+article .btn{
+    position: relative;
+    margin-bottom: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article .btn>p.left{
+    font-size: 12px;
+    color: #888;
+}
+
+article .btn>p.right{
+   width: 200px;
+   padding: 12px 0;
+   display: flex;
+   justify-content: center;
+   border: 1px solid #e8e8e8;
+   border-radius: 18px;
+   color: #e8e8e8;
+   font-size: 12px;
+   box-sizing: border-box;
+}
+
+article .btn>ul{
+    position: absolute;
+    border: 1px solid #e8e8e8;
+    background-color: white;
+    border-bottom: none;
+    top: 40px; right: 0;
+    width: 200px;
+    display: none;
+}
+
+article .btn>ul>li{
+    line-height: 25px;
+    border-bottom: 1px solid #e8e8e8;
+    text-align: center;
+    font-size: 12px;
+    color: #e8e8e8;
+}
+
+
+/* gallery */
+
+
+
