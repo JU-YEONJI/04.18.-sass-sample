@@ -84,6 +84,11 @@ input, select {
     vertical-align:middle;
 }
 
+button{
+    border: none;
+    background-color: transparent;
+}
+
 
 /* change border colour to suit your needs */
 hr {

@@ -59,6 +59,7 @@ article .btn>ul>li{
     text-align: center;
     font-size: 12px;
     color: #e8e8e8;
+    z-index: 200;
 }
 
 
@@ -66,6 +67,9 @@ article .btn>ul>li{
 
 
 .gallery{
+    /* background-color: pink; */
+    width: 1170px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -78,33 +82,40 @@ article .btn>ul>li{
 }
 
 .gallery>figure>img{
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .gallery>figure>figcaption{}
 
-.gallery dl{}
+.gallery dl{
+    font-size: 14px;
+    text-align: center;
+
+}
 
 .gallery dl>dt{
+    color: #25292c;
     font-weight: bold;
-    font-size: 12px;
-    margin-bottom: 18px;
-    text-align: center;
+    /* font-size: 12px; */
+    margin-bottom: 14px;
+    /* text-align: center; */
 }
 
 .gallery dl>dd:nth-child(2){
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 25px;
 }
 
 .gallery dl>dd:nth-child(2)>ins{
-    font-size: 14px;
-    color: red;
+    /* font-size: 14px; */
+    color: #ca7379;
+    margin: 0 10px;
     font-weight: bold;
 }
 
 .gallery dl>dd:nth-child(2)>del{
     color: #e8e8e8;
+    margin: 0 10px;
     font-size: 12px;
 }
 
@@ -113,36 +124,40 @@ article .btn>ul>li{
     justify-content: space-between;
 }
 
-.gallery dl>dd:nth-child(3)>.add{
-    border: none;
-    width: 130px; height: 36px;
-    background-color: white;
-    border: 1px solid #888;
-    border-radius: 30px;
-    color: #888;
-    font-size: 12px;
+.gallery dl>dd:nth-child(3)>button{
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
-.gallery dl>dd:nth-child(3)>.fav{
-    border: none;
+.gallery dl>dd:nth-child(3)>button:nth-child(1){
+    width: 130px; height: 36px;
+    /* background-color: white; */
+    border: 1px solid #888;
+    border-radius: 30px;
+    color: #25292c;
+    font-size: 13px;
+}
+
+.gallery dl>dd:nth-child(3)>button:nth-child(2){
     width: 36px; height: 36px;
-    background-color: white;
+    /* background-color: white; */
     border: 1px solid #888;
     padding-top: 2px;
-    border-radius: 30px;
-    color: #888;
-    font-size: 16px;
+    border-radius: 18px;
+    color: #25292c;
+    font-size: 12px;
 }
 
 .gallery dl>dd:nth-child(4){
     position: absolute;
-    right:20px; bottom:160px;
+    right:20px; bottom:150px;
 }
 
 .gallery dl>dd:nth-child(4)>b{
-    display: inline-block;
+    display: block;
     font-weight: bold;
-    font-size: 12px;
+    /* font-size: 12px; */
     background-color: #ca7379;
     color: white;
     width: 50px; height: 50px;
@@ -150,5 +165,4 @@ article .btn>ul>li{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }

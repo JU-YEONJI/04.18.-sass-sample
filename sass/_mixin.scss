@@ -1,0 +1,28 @@
+@use './vertical.scss' as *;
+
+@mixin layout($start:space-between,$vertical:center,$wrap:nowrap,$direction:row){
+    display: flex;
+    justify-content: $start;
+    align-items: $vertical;
+    flex-wrap: $wrap;
+    flex-direction: $direction;
+}
+
+@mixin margin($bottom:0){
+    margin: 0 auto;
+    margin-bottom: $bottom;
+}
+
+
+
+@mixin center(){
+    text-align: center;
+}
+
+@mixin border($Bpx:1px,$Bcolor:$back,$Bradius:0){
+    background-color: transparent;
+    border: none;
+    border: $Bpx solid $Bcolor;
+    border-radius: $Bradius;
+    color: $color;
+}
