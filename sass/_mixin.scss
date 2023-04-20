@@ -13,13 +13,11 @@
     margin-bottom: $bottom;
 }
 
-
-
 @mixin center(){
     text-align: center;
 }
 
-@mixin border($Bpx:1px,$Bcolor:$back,$Bradius:0){
+@mixin border($Bpx:1px,$Bcolor:$back,$Bradius:0,$Fcolor:$color){
     background-color: transparent;
     border: none;
     border: $Bpx solid $Bcolor;

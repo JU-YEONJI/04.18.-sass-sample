@@ -1,0 +1,151 @@
+@use './vertical.scss' as *;
+@use './mixin.scss' as *;
+// @import url('./mixin.scss');
+@use './common.scss';
+
+
+// article
+
+article{
+
+    >div{
+        padding: $basic*10 0;
+        width: $content;
+        @include margin;
+
+        h3{
+            letter-spacing: $basic;
+            @include center;
+            font-size: $basic*4;
+            font-weight: bold;
+            margin-bottom: $basic*8;
+            color: $darken;
+        }
+
+        .btn{
+            margin-bottom: $bottomPx;
+            position: relative;
+            @include layout;
+
+            .left{
+                font-size: $small;
+                color: $color;
+            }
+            .right{
+                width: $basic*20;
+                padding: $basic+2 0;
+                @include layout($start:center);
+                @include border($Bradius:18px);
+                font-size: $small;
+                box-sizing: border-box;
+                i{
+                    padding-left: $basic;
+                }
+            }
+
+            ul{
+                background-color: $white;
+                @include border;
+                position: absolute;
+                top: $basic*4; right: 0;
+                line-height: $bottomPx;
+                border-bottom: none;
+                width: $basic*20;
+                @include center;
+                font-size: $small;
+                color: $color;
+                z-index: 200;
+
+                li{
+                    border-bottom: 1px solid $back;
+                }
+
+            }
+        }
+
+        // gallery
+
+        .gallery{
+
+            width: $content;
+                @include margin;
+                @include layout($wrap:wrap);
+            figure{
+                width: $basic*27;
+                margin-bottom: $basic*5;
+                position: relative;
+
+                img{
+                margin-bottom: $bottomPx;
+                }
+
+                //figcaption
+                dl{
+                    font-size: $large;
+                    @include center;
+                
+                    dt{
+                        color: $darken;
+                        font-weight: bold;
+                        margin-bottom: $basic*2;
+                    }
+
+                    dd{
+                        &:nth-child(2){
+                            margin-bottom: $bottomPx;
+
+                            ins{
+                                text-decoration: none;
+                                color: $red;
+                                margin: 0 $basic;
+                            }
+
+                            del{
+                                color: $color;
+                                margin: 0 $basic;
+                                font-size: $small;
+                            }
+
+                        }
+                        &:nth-child(3){
+                            @include layout;
+                            >button{
+                                @include layout($start:center);
+                                &:nth-child(1){
+                                    width: 130px; height: 36px;
+                                    @include border($Bradius:18px);
+                                }
+                                &:nth-child(2){
+                                    padding-top: 2px;
+                                    width: 36px; height: 36px;
+                                    @include border($Bradius:50%);
+                                }
+
+                            }
+                        }
+
+                        &:nth-child(4){
+                            position: absolute;
+                            right:$basic*2; bottom:$basic*15;
+                            b{
+                                display: block;
+                                font-weight: bold;
+                                background-color: $red;
+                                color: $white;
+                                width: $basic*5; height: $basic*5;
+                                @include layout($start:center,$vertical:center);
+                                border-radius: 50%;
+                            }
+                            
+                        }
+                
+                    }
+                
+                }
+
+            }
+        }
+
+    }
+    
+}

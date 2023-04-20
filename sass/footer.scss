@@ -1,0 +1,64 @@
+
+@use './vertical.scss' as *;
+@use './mixin.scss' as *;
+// @import url('./mixin.scss');
+@use './common.scss';
+
+
+// #footer
+
+
+#footer{
+    padding: 70px 0 50px;
+    background-color: $back;
+}
+
+
+aside{
+    width: $content;
+    font-size: 12px;
+    @include margin($bottom:60px);
+    @include layout($start:flex-start,$wrap:wrap,$vertical:flex-start);
+    dl{
+        width: 25%;
+        dt{
+            font-size: $large;
+            font-weight: bold;
+            margin-bottom: $bottomPx+5;
+            color: $darken;
+            span{
+                font-weight: bold;
+                padding-bottom: $basic;
+                border-bottom: 1px solid $darken;
+            }
+        }
+        dd{
+            margin-bottom: $basic+5;
+            a{color: $color;}
+        }
+        &:nth-child(1)>dd:nth-child(2)>address{
+            color: $color;
+            width: 247px;
+            line-height: $bottomPx;
+            font-size: $large;
+            font-weight: bold;
+            margin-bottom: $bottomPx+5;
+        }
+    }
+}
+
+footer{
+    width: $content;
+    @include margin;
+    @include layout($direction:row-reverse);
+    ul{
+        display: flex;
+        li{
+            margin-left: $basic;
+        }
+    }
+    small{
+        font-size: $small;
+        color:$color;
+    }
+}
